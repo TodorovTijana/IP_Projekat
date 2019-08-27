@@ -137,7 +137,6 @@
 \begin{lstlisting}
 booleandf = df.select_dtypes(include=[bool])
 booleanDictionary = {True: "tacno", False: "netacno"}
-
 for column in booleandf:
     df[column] = df[column].map(booleanDictionary)
 
@@ -251,18 +250,12 @@ Preciznost 0.8580738595220855
      netacno       0.83      0.96      0.89      1951
        tacno       0.93      0.71      0.80      1269
 
-   micro avg       0.86      0.86      0.86      3220
-   macro avg       0.88      0.83      0.85      3220
-weighted avg       0.87      0.86      0.86      3220
 #Skup Test
 #Izvestaj klasifikacije
               precision    recall  f1-score   support
      netacno       0.83      0.96      0.89       837
        tacno       0.92      0.70      0.80       544
 
-   micro avg       0.86      0.86      0.86      1381
-   macro avg       0.87      0.83      0.84      1381
-weighted avg       0.87      0.86      0.85      1381
 \end{lstlisting}
 \end{frame}
 
@@ -325,9 +318,6 @@ Preciznost 0.8167994207096307
      netacno       0.79      0.95      0.86       837
        tacno       0.88      0.62      0.73       544
 
-   micro avg       0.82      0.82      0.82      1381
-   macro avg       0.84      0.78      0.79      1381
-weighted avg       0.83      0.82      0.81      1381
 \end{lstlisting} 
 
 \end{frame}
@@ -350,9 +340,6 @@ Preciznost 0.833454018826937
      netacno       0.83      0.92      0.87       837
        tacno       0.85      0.70      0.77       544
 
-   micro avg       0.83      0.83      0.83      1381
-   macro avg       0.84      0.81      0.82      1381
-weighted avg       0.84      0.83      0.83      1381
 \end{lstlisting} 
 
 \end{frame}
@@ -373,6 +360,10 @@ weighted avg       0.84      0.83      0.83      1381
 \subsubsection*{Neuronske mreže - SPSS}
 \begin{frame}[fragile]
 \frametitle{Neuronske mreže - SPSS}
+\begin{itemize}
+\item Model se generiše pokretanjem čvora \textit{Neural Net}
+\item Za cilj je odabrano kreiranje novog višeslojnog modela
+\end{itemize}
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.5\textwidth]{Neuronske3.png}
@@ -421,10 +412,6 @@ Preciznost 0.8457639391745112
      netacno       0.83      0.94      0.88       837
        tacno       0.88      0.70      0.78       544
 
-   micro avg       0.85      0.85      0.85      1381
-   macro avg       0.86      0.82      0.83      1381
-weighted avg       0.85      0.85      0.84      1381
-
 Broj iteracija:  275
 Broj slojeva:  4
 
@@ -432,8 +419,8 @@ Broj slojeva:  4
 \end{frame}
 
 
-\section{Metod potpornih vektora - SVM}
-\subsection*{Metod potpornih vektora SVM - SPSS}
+\subsection{Metod potpornih vektora - SVM}
+\subsubsection*{Metod potpornih vektora SVM - SPSS}
 \begin{frame}[fragile]
 \frametitle{Metod potpornih vektora - SVM}
 \begin{itemize}
@@ -449,7 +436,7 @@ Broj slojeva:  4
 \end{frame}
 
 
-\subsection*{Metod potpornih vektora SVM - SPSS}
+\subsubsection*{Metod potpornih vektora SVM - SPSS}
 \begin{frame}[fragile]
 \frametitle{Metod potpornih vektora - SVM}
 
@@ -461,8 +448,8 @@ Broj slojeva:  4
 
 \end{frame}
 
-\section{Gausova klasifikacija}
-\subsection*{Gausova klasifikacija - Python}
+\subsection{Gausova klasifikacija}
+\subsubsection*{Gausova klasifikacija - Python}
 \begin{frame}[fragile]
 \frametitle{Gausova klasifikacija}
 
@@ -478,9 +465,6 @@ Preciznost 0.7574221578566256
        tacno       0.73      0.97      0.83       837
      netacno       0.89      0.44      0.59       544
 
-   micro avg       0.76      0.76      0.76      1381
-   macro avg       0.81      0.70      0.71      1381
-weighted avg       0.79      0.76      0.73      1381
 \end{lstlisting}
 \end{frame}
 
@@ -509,7 +493,7 @@ weighted avg       0.79      0.76      0.73      1381
 \end{figure}
 \end{frame}
 
-\section{Hvala na pažnji}
+\section{}
 \begin{frame}{}
  \begin{center}
  	\textbf {Hvala na pažnji!}
